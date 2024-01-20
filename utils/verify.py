@@ -39,9 +39,9 @@ def generate_code(code_length=5):
 # 短信发送
 from ronglian_sms_sdk import SmsSDK
 
-accId = '2c94811c8cd4da0a018cf230ba70056b'
-accToken = '33423b77b8e14f7eb97c0f1d5d2c2646'
-appId = '2c94811c8cd4da0a018cf230bbed0572'
+accId = ''
+accToken = ''
+appId = ''
 
 
 def send_message(mobile, sms_code):
@@ -88,8 +88,3 @@ def decryptTheToken(token):
     data = serializer.loads(token)
     return data
 
-#
-# #eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNDk2MzcwMiwiZXhwIjoxNzA0OTYzNzIyfQ.eyJuYW1lIjoiMTIzIn0.ThlMpqLjItvLEynHi-ICg5R8A_YrcXSRTWu7fMTmTSnSG5THgMGBdg8RjA9luEsh3WLCmunhXb6-YTQXTEKeYw
-# data = serializer.loads("eyJhbGciOiJIUzUxMiIsImlhdCI6MTcwNDk2MzgxNSwiZXhwIjoxNzA0OTYzODM1fQ.eyJuYW1lIjoiMTIzIn0.79KhZExdZAhZkL67cepWiDwtWpdqYeTorWtdbfN4vI2T9jHgrlHXvZ8baWoBG6ctWLcdEC3wSxvheGLrjqBkYQ")
-# #
-# print(data)
